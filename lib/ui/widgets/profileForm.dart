@@ -313,7 +313,6 @@ class _ProfileFormState extends State<ProfileForm> {
                   ),
                   RaisedButton.icon(onPressed: (){
                     print("Moving back to main page");
-
                     BlocProvider.of<AuthenticationBloc>(context).add(LoggedOut());
                     //Navigator.of(context).pop();
                   }, icon: Icon(Icons.arrow_left), label: Text('Go Back'))
